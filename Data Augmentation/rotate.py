@@ -38,7 +38,7 @@ def create_labels(input_file, output_file, img_size):
 
 
 # Directory for images
-directory = "train/images"
+directory = "valid/images"
 
 # Initialize counters
 num_files = 0
@@ -78,7 +78,7 @@ for filename in os.scandir(directory):
         # Create new label files for each rotation
         for i in range(1, 4):
             if i == 1:
-                input_file = f"train/labels/{actual_name}.txt"
+                input_file = f"valid/labels/{actual_name}.txt"
             else:
                 input_file = f"Data Augmentation/New_Labels/r{i - 1}__{actual_name}.txt"
 
