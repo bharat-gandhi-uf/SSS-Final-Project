@@ -20,7 +20,7 @@ def move_files(source_dir, target_dir):
 if __name__ == "__main__":
 
     # Move labels
-    move_files("Data Augmentation/ New_Labels", "train/labels")
+    move_files("./Data Augmentation/New_Labels", "train/labels")
 
     # Move Images
-    move_files("Data Augmentation/Rotated_Images", "train/images")
+    move_files("./Data Augmentation/Rotated_Images", "train/images")
